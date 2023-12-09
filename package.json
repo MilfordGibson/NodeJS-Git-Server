@@ -1,0 +1,56 @@
+{
+  "name": "git-server",
+  "version": "0.2.1",
+  "description": "A simple, multi-tenant git server written in NodeJS",
+  "author": "Quinton Pike <@quinton.pike>",
+  "contributors": [
+    "Quinton Pike <qrpike@gmail.com>",
+    "Justas Brazauskas <brazauskasjustas@gmail.con>",
+    "Gabriel J. Csapo <gabecsapo@gmail.com>"
+  ],
+  "dependencies": {
+    "async": "^2.0.0",
+    "cli-listener": "0.0.4",
+    "cli-table": "^0.3.1",
+    "commander": "^2.9.0",
+    "connect": "~2.9.0",
+    "event-proxy": "0.0.1",
+    "git-emit": "0.0.0",
+    "mkdirp": "^0.5.1",
+    "pushover": "^1.3.6"
+  },
+  "devDependencies": {
+    "blanket": "~1.1.5",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.14",
+    "mocha": "^3.1.2",
+    "mocha-lcov-reporter": "^1.2.0"
+  },
+  "scripts": {
+    "test": "make test",
+    "blanket": {
+      "pattern": "host.js"
+    }
+  },
+  "keywords": [
+    "git",
+    "github",
+    "git server",
+    "git hosting",
+    "git http"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qrpike/NodeJS-Git-Server"
+  },
+  "homepage": "http://qrpike.github.io/NodeJS-Git-Server/host.coffee.html",
+  "main": "main.js",
+  "bin": {
+    "git-server": "cli.js",
+    "gitserver": "cli.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "preferGlobal": true
+}
